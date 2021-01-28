@@ -31,7 +31,7 @@
   });
 
   //Define a summary route
-  $f3->route('GET /summary', function(){
+  $f3->route('POST /summary', function(){
     $view = new Template();
     echo $view->render('views/summary.html');
   });
