@@ -14,9 +14,8 @@
 
   //Define a default route (home page)
   $f3->route('GET /', function(){
-    echo "Home page";
-    //$view = new Template();
-    //echo $view->render('views/home.html');
+    $view = new Template();
+    echo $view->render('views/home.html');
   });
 
   //Define a order route
